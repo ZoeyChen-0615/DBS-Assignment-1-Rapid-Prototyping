@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #3a3a3a;
+    background: #f5f1e8;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    color: #2c2c2c;
+}
+
+/* Header */
+.minimal-header {
+    background: #f5f1e8;
+    border-bottom: 1px solid #d4cbb7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.minimal-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #2c2c2c;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #3a3a3a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: #8b7355;
+}
+
+/* Container */
+.container-minimal {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* Hero */
+.hero-minimal {
+    padding: 8rem 3rem 6rem;
+    text-align: center;
+    background: #f5f1e8;
+}
+
+.hero-content-minimal h1 {
+    font-size: 4rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.subtitle-minimal {
+    font-size: 1.2rem;
+    color: #6a6a6a;
+    font-style: italic;
+}
+
+/* Intro */
+.intro-minimal {
+    padding: 3rem 3rem 5rem;
+    background: #fff;
+}
+
+.lead-text {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+/* Attractions */
+.attractions-minimal {
+    padding: 6rem 3rem;
+    background: #f5f1e8;
+}
+
+.attractions-minimal h2,
+.cuisine-minimal h2,
+.guidance-minimal h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.location-minimal {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #d4cbb7;
+}
+
+.location-minimal:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.location-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #c4b5a0;
+    min-width: 40px;
+    font-style: italic;
+}
+
+.location-content h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+}
+
+.address {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    line-height: 1.9;
+}
+
+.tag-minimal {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #8b7355;
+    border: 1px solid #d4cbb7;
+    padding: 0.3rem 0.9rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.05em;
+    background: transparent;
+}
+
+/* Cuisine */
+.cuisine-minimal {
+    padding: 6rem 3rem;
+    background: #fff;
+}
+
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.cuisine-item h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.cuisine-item p {
+    line-height: 1.9;
+    color: #4a4a4a;
+}
+
+/* Guidance */
+.guidance-minimal {
+    padding: 6rem 3rem;
+    background: #f5f1e8;
+}
+
+.guidance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.guidance-card h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.guidance-card p {
+    line-height: 1.9;
+    color: #4a4a4a;
+}
+
+/* Footer */
+.minimal-footer {
+    background: #fff;
+    padding: 4rem 3rem;
+    text-align: center;
+    border-top: 1px solid #d4cbb7;
+}
+
+.footer-minimal p {
+    color: #999;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.footer-links {
+    margin-top: 1.5rem;
+}
+
+.footer-links a {
+    color: #8b7355;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #2c2c2c;
+}
+
+.divider {
+    color: #d4cbb7;
+    margin: 0 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .minimal-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero-content-minimal h1 {
+        font-size: 2.5rem;
+    }
+
+    .container-minimal {
+        padding: 0 2rem;
+    }
+
+    .hero-minimal,
+    .intro-minimal,
+    .attractions-minimal,
+    .cuisine-minimal,
+    .guidance-minimal {
+        padding: 3rem 2rem;
+    }
+
+    .location-minimal {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cuisine-grid,
+    .guidance-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .attractions-minimal h2,
+    .cuisine-minimal h2,
+    .guidance-minimal h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content-minimal h1 {
+        font-size: 2rem;
+    }
+
+    .lead-text {
+        font-size: 1.1rem;
+    }
+
+    .location-content h3 {
+        font-size: 1.5rem;
+    }
+}

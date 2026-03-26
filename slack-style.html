@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#chicago-travel - Slack</title>
+    <link rel="stylesheet" href="slack-styles.css">
+</head>
+<body>
+    <div class="slack-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="workspace-header">
+                <div class="workspace-name">Chicago Guide</div>
+                <div class="workspace-icon">✏️</div>
+            </div>
+
+            <div class="channels-section">
+                <div class="section-header">
+                    <span class="arrow">▼</span>
+                    <span>Channels</span>
+                </div>
+                <div class="channel-list">
+                    <div class="channel active">
+                        <span class="hash">#</span>
+                        <span>chicago-travel</span>
+                    </div>
+                    <div class="channel">
+                        <span class="hash">#</span>
+                        <span>food-recommendations</span>
+                    </div>
+                    <div class="channel">
+                        <span class="hash">#</span>
+                        <span>attractions</span>
+                    </div>
+                    <div class="channel">
+                        <span class="hash">#</span>
+                        <span>travel-tips</span>
+                    </div>
+                    <div class="channel">
+                        <span class="hash">#</span>
+                        <span>photos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="channels-section">
+                <div class="section-header">
+                    <span class="arrow">▼</span>
+                    <span>Direct messages</span>
+                </div>
+                <div class="channel-list">
+                    <div class="dm">
+                        <span class="status online"></span>
+                        <span>Sarah Chen</span>
+                    </div>
+                    <div class="dm">
+                        <span class="status online"></span>
+                        <span>Mike Rodriguez</span>
+                    </div>
+                    <div class="dm">
+                        <span class="status away"></span>
+                        <span>Emily Johnson</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="gallery.html" class="footer-link">← Back to Gallery</a>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <div class="chat-header">
+                <div class="channel-info">
+                    <h1># chicago-travel</h1>
+                    <div class="channel-description">Planning your trip to Chicago | 156 members</div>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn">🔖</button>
+                    <button class="icon-btn">ℹ️</button>
+                </div>
+            </div>
+
+            <div class="messages-container">
+                <!-- Welcome Message -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%234A154B' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3ETC%3C/text%3E%3C/svg%3E" alt="TravelBot" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">TravelBot</span>
+                            <span class="badge">BOT</span>
+                            <span class="timestamp">9:24 AM</span>
+                        </div>
+                        <div class="message-body">
+                            <p>Welcome to #chicago-travel! 🎉 Share your favorite spots, ask questions, and help fellow travelers discover the Windy City!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Millennium Park -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232eb886' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3ESC%3C/text%3E%3C/svg%3E" alt="Sarah" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Sarah Chen</span>
+                            <span class="timestamp">10:15 AM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Millennium Park</strong> is absolutely stunning! 🌟</p>
+                            <p>📍 201 E Randolph St | <span class="tag">Free</span></p>
+                            <p>The Cloud Gate (The Bean) is a must-see. Perfect for photos, especially at sunrise when there are fewer crowds. The Crown Fountain is super interactive too!</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">❤️</span>
+                                <span class="count">24</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">📸</span>
+                                <span class="count">18</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">👍</span>
+                                <span class="count">32</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">3 replies</button>
+                            <span class="reply-time">Last reply 2 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Dish Pizza -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23e01e5a' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EMR%3C/text%3E%3C/svg%3E" alt="Mike" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Mike Rodriguez</span>
+                            <span class="timestamp">10:32 AM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Lou Malnati's Deep Dish Pizza</strong> 🍕🍕🍕</p>
+                            <p>This is THE deep dish experience! Don't let anyone tell you otherwise. Get the Lou's Special - it's incredible. Warning: one slice is basically a meal 😅</p>
+                            <p>Multiple locations | $$$ | Must order ahead on weekends</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">🍕</span>
+                                <span class="count">45</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">😋</span>
+                                <span class="count">28</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🔥</span>
+                                <span class="count">19</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">8 replies</button>
+                            <span class="reply-time">Last reply 30 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reply Thread Example -->
+                <div class="thread-reply">
+                    <div class="thread-line"></div>
+                    <div class="message">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%2336c5f0' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EEJ%3C/text%3E%3C/svg%3E" alt="Emily" class="avatar small">
+                        <div class="message-content">
+                            <div class="message-header">
+                                <span class="username">Emily Johnson</span>
+                                <span class="timestamp">10:45 AM</span>
+                            </div>
+                            <div class="message-body">
+                                <p>Giordano's is also amazing! The stuffed pizza is slightly different from deep dish but SO good 😍</p>
+                            </div>
+                            <div class="reactions">
+                                <div class="reaction">
+                                    <span class="emoji">👍</span>
+                                    <span class="count">12</span>
+                                </div>
+                                <div class="reaction">
+                                    <span class="emoji">🍕</span>
+                                    <span class="count">8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art Institute -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ecb22e' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EJL%3C/text%3E%3C/svg%3E" alt="James" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">James Lee</span>
+                            <span class="timestamp">11:20 AM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>The Art Institute of Chicago</strong> 🎨</p>
+                            <p>📍 111 S Michigan Ave | $32 admission</p>
+                            <p>World-class museum! Budget at least 3-4 hours. The Impressionist collection is breathtaking. Pro tip: They have free admission days for IL residents!</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">🎨</span>
+                                <span class="count">21</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">❤️</span>
+                                <span class="count">15</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">✨</span>
+                                <span class="count">10</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">2 replies</button>
+                            <span class="reply-time">Last reply 1 hour ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portillo's -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232eb886' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3ESC%3C/text%3E%3C/svg%3E" alt="Sarah" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Sarah Chen</span>
+                            <span class="timestamp">12:05 PM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Portillo's</strong> for authentic Chicago eats! 🌭</p>
+                            <p>Get the combo: Chicago hot dog + Italian beef dipped + cheese fries. Yes it's a lot of food. Yes you need it all. 😂</p>
+                            <p>Multiple locations | $$ | Fast casual</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">🌭</span>
+                                <span class="count">38</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🤤</span>
+                                <span class="count">25</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">💯</span>
+                                <span class="count">22</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">5 replies</button>
+                            <span class="reply-time">Last reply 45 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navy Pier -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23611f69' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EAP%3C/text%3E%3C/svg%3E" alt="Alex" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Alex Park</span>
+                            <span class="timestamp">1:30 PM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Navy Pier</strong> at sunset 🌅</p>
+                            <p>📍 600 E Grand Ave</p>
+                            <p>Best time to visit is golden hour. The Centennial Wheel offers amazing views. Lots of restaurants and shops. Can be touristy but worth it for the lakefront views!</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">🌅</span>
+                                <span class="count">29</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🎡</span>
+                                <span class="count">16</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">👍</span>
+                                <span class="count">20</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Willis Tower -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23e01e5a' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EMR%3C/text%3E%3C/svg%3E" alt="Mike" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Mike Rodriguez</span>
+                            <span class="timestamp">2:15 PM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Willis Tower Skydeck</strong> 🏙️</p>
+                            <p>📍 233 S Wacker Dr | $39</p>
+                            <p>The Ledge is WILD - glass boxes that extend out from the 103rd floor. Not for those afraid of heights! 😱 Book tickets online to skip the line.</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">😱</span>
+                                <span class="count">31</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🏙️</span>
+                                <span class="count">26</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">📸</span>
+                                <span class="count">19</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">4 replies</button>
+                            <span class="reply-time">Last reply 20 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Garrett Popcorn -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%2336c5f0' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EEJ%3C/text%3E%3C/svg%3E" alt="Emily" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Emily Johnson</span>
+                            <span class="timestamp">3:00 PM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Garrett Popcorn</strong> - Chicago Mix is ADDICTIVE 🍿</p>
+                            <p>Caramel + Cheese popcorn mixed together. Sounds weird, tastes AMAZING. There's usually a line but it moves fast. Makes a great gift to bring home!</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">🍿</span>
+                                <span class="count">42</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">😍</span>
+                                <span class="count">35</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🤤</span>
+                                <span class="count">27</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">6 replies</button>
+                            <span class="reply-time">Last reply 10 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture Tour -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23ecb22e' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3EJL%3C/text%3E%3C/svg%3E" alt="James" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">James Lee</span>
+                            <span class="timestamp">3:45 PM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Chicago Architecture River Cruise</strong> 🚢</p>
+                            <p>This was the highlight of my trip! The guides are incredibly knowledgeable. You'll see over 50 buildings and learn the stories behind them. Book the sunset cruise if you can!</p>
+                            <p>~90 minutes | $45 | Book in advance</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">🚢</span>
+                                <span class="count">33</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🏛️</span>
+                                <span class="count">28</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">⭐</span>
+                                <span class="count">24</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Tips -->
+                <div class="message">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%232eb886' width='100' height='100'/%3E%3Ctext x='50' y='50' text-anchor='middle' dy='.3em' font-size='40' fill='white'%3ESC%3C/text%3E%3C/svg%3E" alt="Sarah" class="avatar">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Sarah Chen</span>
+                            <span class="timestamp">4:20 PM</span>
+                        </div>
+                        <div class="message-body">
+                            <p><strong>Quick Tips Thread 💡</strong></p>
+                            <p>• Get a Ventra card for the 'L' train - so convenient!</p>
+                            <p>• Best time to visit: May-June or September-October</p>
+                            <p>• Many museums have free days</p>
+                            <p>• Walking is the best way to explore neighborhoods</p>
+                            <p>• Layer up - it's called the Windy City for a reason! 💨</p>
+                        </div>
+                        <div class="reactions">
+                            <div class="reaction">
+                                <span class="emoji">💡</span>
+                                <span class="count">52</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">🙏</span>
+                                <span class="count">41</span>
+                            </div>
+                            <div class="reaction">
+                                <span class="emoji">👍</span>
+                                <span class="count">38</span>
+                            </div>
+                            <div class="reaction add">
+                                <span class="emoji">😊</span>
+                            </div>
+                        </div>
+                        <div class="replies">
+                            <button class="reply-btn">12 replies</button>
+                            <span class="reply-time">Last reply 5 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="message-input">
+                <div class="input-container">
+                    <button class="input-btn">+</button>
+                    <input type="text" placeholder="Message #chicago-travel" class="message-field">
+                    <div class="input-actions">
+                        <button class="input-icon">📎</button>
+                        <button class="input-icon">😊</button>
+                        <button class="input-icon">@</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

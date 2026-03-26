@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.2em;
+}
+
+/* Header */
+.deco-header {
+    background: #0f1419;
+    border-bottom: 3px solid #d4af37;
+}
+
+.header-ornament {
+    height: 3px;
+    background: repeating-linear-gradient(
+        90deg,
+        #d4af37 0px,
+        #d4af37 20px,
+        #0f1419 20px,
+        #0f1419 40px
+    );
+}
+
+.header-ornament.top {
+    border-bottom: 1px solid #d4af37;
+}
+
+.header-ornament.bottom {
+    border-top: 1px solid #d4af37;
+}
+
+.deco-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.logo-deco {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #d4af37;
+    letter-spacing: 0.3em;
+}
+
+.logo-est {
+    font-size: 0.8rem;
+    color: #8b7355;
+    letter-spacing: 0.2em;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-right a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    transition: color 0.3s;
+    font-weight: 400;
+}
+
+.nav-right a:hover {
+    color: #fff;
+}
+
+/* Container */
+.container-deco {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* Hero */
+.hero-deco {
+    padding: 6rem 3rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.geometric-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 175, 55, 0.03) 35px, rgba(212, 175, 55, 0.03) 70px),
+        repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(212, 175, 55, 0.03) 35px, rgba(212, 175, 55, 0.03) 70px);
+    pointer-events: none;
+}
+
+.hero-frame {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid #d4af37;
+    padding: 4rem;
+    position: relative;
+    background: rgba(15, 20, 25, 0.7);
+}
+
+.corner-ornament {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d4af37;
+}
+
+.corner-ornament.tl {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-ornament.tr {
+    top: -2px;
+    right: -2px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.corner-ornament.bl {
+    bottom: -2px;
+    left: -2px;
+    border-right: none;
+    border-top: none;
+}
+
+.corner-ornament.br {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+}
+
+.hero-content-deco {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle-deco {
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    color: #d4af37;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content-deco h1 {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 0.4em;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.divider-deco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.diamond {
+    color: #d4af37;
+    font-size: 0.8rem;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background: #d4af37;
+}
+
+.tagline-deco {
+    font-size: 1.1rem;
+    color: #8b7355;
+    letter-spacing: 0.2em;
+}
+
+/* Intro */
+.intro-deco {
+    padding: 5rem 3rem;
+    background: #0f1419;
+}
+
+.quote-box {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 2rem 4rem;
+    border-top: 2px solid #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+.quote-mark {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    color: #d4af37;
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+}
+
+.quote-mark.closing {
+    bottom: -3rem;
+    right: 1rem;
+    left: auto;
+    top: auto;
+}
+
+.quote-box p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #d4af37;
+    font-style: italic;
+}
+
+/* Attractions */
+.attractions-deco {
+    padding: 6rem 3rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.section-title-deco {
+    font-size: 2rem;
+    text-align: center;
+    color: #d4af37;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.section-title-deco.light {
+    color: #fff;
+}
+
+.line-left, .line-right {
+    width: 100px;
+    height: 2px;
+    background: #d4af37;
+}
+
+.deco-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.deco-card {
+    background: rgba(15, 20, 25, 0.8);
+    border: 2px solid #d4af37;
+    transition: all 0.3s;
+}
+
+.deco-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.card-border {
+    border: 1px solid #d4af37;
+    margin: 1rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.card-number-deco {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0f1419;
+    color: #d4af37;
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.deco-card h3 {
+    font-size: 1.3rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-divider {
+    width: 60px;
+    height: 2px;
+    background: #d4af37;
+    margin: 1rem auto;
+}
+
+.location-deco {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8b7355;
+    margin-bottom: 1rem;
+}
+
+.desc-deco {
+    color: #c4b5a0;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag-deco {
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+}
+
+.tag-deco.gold {
+    background: #d4af37;
+    color: #0f1419;
+}
+
+/* Cuisine */
+.cuisine-deco {
+    padding: 6rem 3rem;
+    background: #0f1419;
+}
+
+.cuisine-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.cuisine-card-deco {
+    text-align: center;
+}
+
+.cuisine-icon {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.cuisine-card-deco h3 {
+    font-size: 1.3rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.cuisine-card-deco p {
+    color: #c4b5a0;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.establishments {
+    font-size: 0.85rem;
+    color: #8b7355;
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+/* Guide */
+.guide-deco {
+    padding: 6rem 3rem;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.guide-panel {
+    border: 2px solid #d4af37;
+    padding: 2rem;
+    background: rgba(15, 20, 25, 0.6);
+}
+
+.guide-panel h3 {
+    font-size: 1.1rem;
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.panel-divider {
+    width: 40px;
+    height: 2px;
+    background: #d4af37;
+    margin: 1rem auto;
+}
+
+.guide-panel p {
+    color: #c4b5a0;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Footer */
+.deco-footer {
+    background: #0f1419;
+    border-top: 3px solid #d4af37;
+}
+
+.footer-ornament.top {
+    height: 3px;
+    background: repeating-linear-gradient(
+        90deg,
+        #d4af37 0px,
+        #d4af37 20px,
+        #0f1419 20px,
+        #0f1419 40px
+    );
+    border-bottom: 1px solid #d4af37;
+}
+
+.footer-ornament.bottom {
+    height: 3px;
+    background: repeating-linear-gradient(
+        90deg,
+        #d4af37 0px,
+        #d4af37 20px,
+        #0f1419 20px,
+        #0f1419 40px
+    );
+    border-top: 1px solid #d4af37;
+}
+
+.footer-content-deco {
+    padding: 3rem;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #d4af37;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.5rem;
+}
+
+.footer-year {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #8b7355;
+    margin: 1rem 0;
+}
+
+.footer-course {
+    font-size: 0.85rem;
+    color: #8b7355;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links-deco {
+    margin-top: 2rem;
+}
+
+.footer-links-deco a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    transition: color 0.3s;
+}
+
+.footer-links-deco a:hover {
+    color: #fff;
+}
+
+.separator {
+    color: #8b7355;
+    margin: 0 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .deco-nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .nav-right {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-deco {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero-frame {
+        padding: 2.5rem 2rem;
+    }
+
+    .hero-content-deco h1 {
+        font-size: 3rem;
+    }
+
+    .container-deco {
+        padding: 0 1.5rem;
+    }
+
+    .attractions-deco,
+    .cuisine-deco,
+    .guide-deco {
+        padding: 4rem 1.5rem;
+    }
+
+    .section-title-deco {
+        font-size: 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .line-left, .line-right {
+        width: 60px;
+    }
+
+    .deco-grid,
+    .cuisine-columns,
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-deco {
+        font-size: 1.3rem;
+    }
+
+    .hero-content-deco h1 {
+        font-size: 2.5rem;
+    }
+
+    .quote-box {
+        padding: 2rem 2rem;
+    }
+
+    .quote-box p {
+        font-size: 1.1rem;
+    }
+}

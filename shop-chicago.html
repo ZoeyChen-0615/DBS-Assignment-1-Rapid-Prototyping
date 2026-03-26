@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHICAGO | Shop Experiences</title>
+    <link rel="stylesheet" href="shop-styles.css">
+</head>
+<body>
+    <header class="shop-header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-left">
+                    <button class="menu-btn">☰</button>
+                    <a href="gallery.html" class="back-link">← Gallery</a>
+                </div>
+                <div class="header-center">
+                    <h1 class="logo">CHICAGO</h1>
+                </div>
+                <div class="header-right">
+                    <button class="icon-btn">🔍</button>
+                    <button class="icon-btn">👤</button>
+                    <button class="icon-btn cart-btn">
+                        🛒
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="#" class="nav-item active">All Experiences</a>
+            <a href="#" class="nav-item">Culture</a>
+            <a href="#" class="nav-item">Food & Dining</a>
+            <a href="#" class="nav-item">Outdoor</a>
+            <a href="#" class="nav-item">Architecture</a>
+            <a href="#" class="nav-item">Entertainment</a>
+        </nav>
+    </header>
+
+    <main class="shop-main">
+        <aside class="sidebar-filters">
+            <div class="filter-section">
+                <h3 class="filter-title">PRICE RANGE</h3>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>Free</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>$ (Under $30)</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>$$ ($30-$60)</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>$$$ (Over $60)</span>
+                </label>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">DURATION</h3>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>1-2 hours</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>Half Day (3-5 hrs)</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Full Day (6+ hrs)</span>
+                </label>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">BEST FOR</h3>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Solo Travelers</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>Couples</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>Families</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Large Groups</span>
+                </label>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">TIME OF DAY</h3>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Morning</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Afternoon</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Evening</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>Anytime</span>
+                </label>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">SEASON</h3>
+                <label class="filter-option">
+                    <input type="checkbox" checked>
+                    <span>Year-Round</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Spring/Summer</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox">
+                    <span>Fall/Winter</span>
+                </label>
+            </div>
+        </aside>
+
+        <div class="products-container">
+            <div class="products-header">
+                <p class="results-count">8 experiences</p>
+                <div class="sort-controls">
+                    <label>
+                        <span>Sort by:</span>
+                        <select class="sort-select">
+                            <option>Most Popular</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="image-text">MILLENNIUM PARK</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge new">FREE</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Millennium Park Experience</h3>
+                        <p class="product-category">Culture · Art</p>
+                        <div class="product-details">
+                            <span class="detail-badge">2-3 hours</span>
+                            <span class="detail-badge">Families</span>
+                            <span class="detail-badge">Anytime</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">FREE</p>
+                            <div class="rating">★★★★★ (4,521)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="image-text">ART INSTITUTE</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge">POPULAR</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Art Institute of Chicago</h3>
+                        <p class="product-category">Culture · Museum</p>
+                        <div class="product-details">
+                            <span class="detail-badge">3-4 hours</span>
+                            <span class="detail-badge">Couples</span>
+                            <span class="detail-badge">Year-Round</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$32.00</p>
+                            <div class="rating">★★★★★ (3,842)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="image-text">NAVY PIER</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Navy Pier Adventure</h3>
+                        <p class="product-category">Entertainment · Outdoor</p>
+                        <div class="product-details">
+                            <span class="detail-badge">Half Day</span>
+                            <span class="detail-badge">Families</span>
+                            <span class="detail-badge">Spring-Fall</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$15.00 - $45.00</p>
+                            <div class="rating">★★★★☆ (2,913)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="image-text">WILLIS TOWER</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge">BESTSELLER</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Willis Tower Skydeck</h3>
+                        <p class="product-category">Architecture · Views</p>
+                        <div class="product-details">
+                            <span class="detail-badge">1-2 hours</span>
+                            <span class="detail-badge">Couples</span>
+                            <span class="detail-badge">Anytime</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$39.00</p>
+                            <div class="rating">★★★★★ (5,127)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span class="image-text">LINCOLN PARK ZOO</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge new">FREE</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Lincoln Park Zoo Visit</h3>
+                        <p class="product-category">Outdoor · Wildlife</p>
+                        <div class="product-details">
+                            <span class="detail-badge">3-4 hours</span>
+                            <span class="detail-badge">Families</span>
+                            <span class="detail-badge">Year-Round</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">FREE</p>
+                            <div class="rating">★★★★☆ (4,018)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <span class="image-text">SHEDD AQUARIUM</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Shedd Aquarium Experience</h3>
+                        <p class="product-category">Wildlife · Indoor</p>
+                        <div class="product-details">
+                            <span class="detail-badge">3-4 hours</span>
+                            <span class="detail-badge">Families</span>
+                            <span class="detail-badge">Year-Round</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$49.95</p>
+                            <div class="rating">★★★★★ (3,654)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 7 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span class="image-text">RIVER CRUISE</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge">POPULAR</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Architecture River Cruise</h3>
+                        <p class="product-category">Architecture · Tour</p>
+                        <div class="product-details">
+                            <span class="detail-badge">90 minutes</span>
+                            <span class="detail-badge">Couples</span>
+                            <span class="detail-badge">Spring-Fall</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$45.00</p>
+                            <div class="rating">★★★★★ (6,241)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            <span class="image-text">WRIGLEY FIELD</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wrigley Field Tour</h3>
+                        <p class="product-category">Sports · Historic</p>
+                        <div class="product-details">
+                            <span class="detail-badge">90 minutes</span>
+                            <span class="detail-badge">Groups</span>
+                            <span class="detail-badge">Spring-Fall</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$25.00</p>
+                            <div class="rating">★★★★☆ (2,387)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Food Section -->
+            <div class="section-divider">
+                <h2>DINING EXPERIENCES</h2>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%);">
+                            <span class="image-text">DEEP DISH</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge">ICONIC</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Deep Dish Pizza Experience</h3>
+                        <p class="product-category">Food · Chicago Classic</p>
+                        <div class="product-details">
+                            <span class="detail-badge">1-2 hours</span>
+                            <span class="detail-badge">All Groups</span>
+                            <span class="detail-badge">Anytime</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$15.00 - $25.00</p>
+                            <div class="rating">★★★★★ (8,429)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);">
+                            <span class="image-text">PORTILLO'S</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                        <span class="badge">LOCAL FAVORITE</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Chicago Hot Dog & Italian Beef</h3>
+                        <p class="product-category">Food · Fast Casual</p>
+                        <div class="product-details">
+                            <span class="detail-badge">30-60 min</span>
+                            <span class="detail-badge">All Groups</span>
+                            <span class="detail-badge">Anytime</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$8.00 - $12.00</p>
+                            <div class="rating">★★★★★ (7,156)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);">
+                            <span class="image-text">GARRETT</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Garrett Popcorn Chicago Mix</h3>
+                        <p class="product-category">Food · Snack</p>
+                        <div class="product-details">
+                            <span class="detail-badge">15-30 min</span>
+                            <span class="detail-badge">All Groups</span>
+                            <span class="detail-badge">Year-Round</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$10.00 - $15.00</p>
+                            <div class="rating">★★★★★ (5,928)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%);">
+                            <span class="image-text">FINE DINING</span>
+                        </div>
+                        <button class="wishlist-btn">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Magnificent Mile Dining</h3>
+                        <p class="product-category">Food · Fine Dining</p>
+                        <div class="product-details">
+                            <span class="detail-badge">2-3 hours</span>
+                            <span class="detail-badge">Couples</span>
+                            <span class="detail-badge">Evening</span>
+                        </div>
+                        <div class="product-footer">
+                            <p class="product-price">$50.00 - $150.00</p>
+                            <div class="rating">★★★★☆ (1,843)</div>
+                        </div>
+                        <button class="add-to-cart">ADD TO ITINERARY</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="shop-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>HELP</h4>
+                <a href="#">Travel Tips</a>
+                <a href="#">Transportation</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-section">
+                <h4>COMPANY</h4>
+                <a href="#">About Chicago</a>
+                <a href="gallery.html">Design Gallery</a>
+                <a href="#">MPCS 51238</a>
+            </div>
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>FOLLOW US</h4>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 CHICAGO EXPERIENCES · All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

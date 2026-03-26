@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;700&family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 50%, #ffb6c1 100%);
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Sparkles Background */
+.sparkles-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle, #fff 1px, transparent 1px),
+        radial-gradient(circle, #ffd700 1px, transparent 1px);
+    background-size: 100px 100px, 150px 150px;
+    background-position: 0 0, 50px 50px;
+    opacity: 0.3;
+    animation: sparkleMove 20s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes sparkleMove {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+/* Header */
+.barbie-header {
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(255, 20, 147, 0.5);
+    position: relative;
+    z-index: 100;
+    border-bottom: 3px solid #fff;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-barbie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-barbie h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.star {
+    font-size: 2rem;
+    animation: starTwinkle 1.5s ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    50% { transform: scale(1.2) rotate(180deg); opacity: 0.7; }
+}
+
+.barbie-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    background: #fff;
+    color: #ff1493;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Container */
+.container-barbie {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero */
+.hero-barbie {
+    padding: 6rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.95);
+    color: #ff1493;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.hero-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-title span {
+    display: block;
+}
+
+.line-2 {
+    font-size: 6rem;
+    color: #ffff00;
+    text-shadow: 4px 4px 0px #ff1493, 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #fff 0%, #ffe6f0 100%);
+    color: #ff1493;
+    border: 3px solid #fff;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.6);
+}
+
+.button-heart {
+    font-size: 1.5rem;
+    animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Welcome */
+.welcome-barbie {
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-card {
+    background: rgba(255, 255, 255, 0.95);
+    color: #ff1493;
+    padding: 3rem;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.4);
+    border: 3px solid #fff;
+}
+
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff1493;
+}
+
+.welcome-card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d81b60;
+}
+
+/* Attractions */
+.attractions-barbie {
+    padding: 5rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title-barbie {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.section-title-barbie.light {
+    color: #fff;
+}
+
+.heart {
+    font-size: 2.5rem;
+    animation: heartPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+/* Barbie Grid */
+.barbie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.barbie-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.4);
+    border: 3px solid;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.barbie-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 15px 45px rgba(255, 255, 255, 0.6);
+}
+
+.pink-sparkle { border-color: #ff69b4; }
+.purple-sparkle { border-color: #da70d6; }
+.blue-sparkle { border-color: #87ceeb; }
+.yellow-sparkle { border-color: #ffd700; }
+.green-sparkle { border-color: #98fb98; }
+.aqua-sparkle { border-color: #7fffd4; }
+.coral-sparkle { border-color: #ff7f50; }
+.rose-sparkle { border-color: #ff1493; }
+
+.card-corner {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: starTwinkle 2s ease-in-out infinite;
+}
+
+.card-corner.tl { top: 10px; left: 10px; }
+.card-corner.tr { top: 10px; right: 10px; }
+
+.card-badge {
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.card-icon-large {
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.barbie-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8rem;
+    color: #ff1493;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.location {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.description {
+    color: #d81b60;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.price-tag {
+    background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.price-tag.free {
+    background: linear-gradient(135deg, #ffd700 0%, #ffeb3b 100%);
+    color: #d81b60;
+}
+
+/* Dining */
+.dining-barbie {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.dining-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.dining-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 25px;
+    text-align: center;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+}
+
+.dining-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
+}
+
+.dining-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.dining-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8rem;
+    color: #ff1493;
+    margin-bottom: 1rem;
+}
+
+.dining-card p {
+    color: #d81b60;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    font-size: 1.2rem;
+}
+
+/* Tips */
+.tips-barbie {
+    padding: 5rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 25px;
+    border: 3px solid #ff69b4;
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+}
+
+.tip-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.6);
+}
+
+.tip-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+    color: #ff1493;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tip-card p {
+    color: #d81b60;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Dream Quote */
+.dream-quote {
+    padding: 5rem 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4rem 3rem;
+    border-radius: 30px;
+    text-align: center;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.5);
+}
+
+.quote-stars {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quote-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    color: #ff1493;
+    margin-bottom: 1rem;
+}
+
+.quote-card p {
+    font-size: 1.3rem;
+    color: #d81b60;
+    margin-bottom: 1.5rem;
+}
+
+.quote-hearts {
+    font-size: 2rem;
+}
+
+/* Footer */
+.barbie-footer {
+    background: linear-gradient(135deg, #ff1493 0%, #c2185b 100%);
+    padding: 3rem 2rem;
+    border-top: 3px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content-barbie {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.footer-links a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Floating Hearts */
+.floating-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.heart-float {
+    position: absolute;
+    bottom: -50px;
+    font-size: 2rem;
+    animation: floatUp 10s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo-barbie h1 {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .line-2 {
+        font-size: 3.5rem;
+    }
+
+    .section-title-barbie {
+        font-size: 2rem;
+    }
+
+    .barbie-grid,
+    .dining-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-card h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .line-2 {
+        font-size: 2.5rem;
+    }
+
+    .barbie-card,
+    .dining-card,
+    .tip-card {
+        padding: 1.5rem;
+    }
+}

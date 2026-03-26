@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.tiktok-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Top Navigation */
+.tiktok-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-tab {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-tab.active {
+    color: #fff;
+}
+
+.nav-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #fff;
+}
+
+.search-icon-tiktok {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Video Feed */
+.video-feed {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.video-feed::-webkit-scrollbar {
+    display: none;
+}
+
+.video-card {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.video-content-overlay {
+    position: absolute;
+    top: 80px;
+    right: 1rem;
+}
+
+.trending-badge {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Video Info */
+.video-info {
+    position: absolute;
+    bottom: 100px;
+    left: 1rem;
+    right: 100px;
+    z-index: 10;
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.creator-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+.creator-details {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.creator-name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.follow-btn {
+    background: #fe2c55;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.video-caption {
+    margin-bottom: 0.5rem;
+}
+
+.video-caption p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.sound-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Video Actions */
+.video-actions {
+    position: absolute;
+    bottom: 100px;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 10;
+}
+
+.action-btn-tiktok {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.action-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.action-count {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sound-disc {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 3s linear infinite;
+    border: 2px solid #fff;
+    font-size: 1rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Bottom Navigation */
+.bottom-nav-tiktok {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #000;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-item-tiktok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.nav-item-tiktok:hover {
+    opacity: 0.7;
+}
+
+.nav-icon-tiktok {
+    font-size: 1.5rem;
+}
+
+.nav-icon-tiktok.create {
+    width: 48px;
+    height: 32px;
+    background: linear-gradient(45deg, #00f2ea 0%, #ff0050 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.nav-label {
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+/* Back Link */
+.back-link-tiktok {
+    position: fixed;
+    top: 70px;
+    left: 1rem;
+    z-index: 101;
+}
+
+.back-link-tiktok a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-info {
+        right: 80px;
+    }
+
+    .video-caption p {
+        font-size: 0.9rem;
+    }
+
+    .action-icon {
+        font-size: 1.8rem;
+    }
+}
